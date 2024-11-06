@@ -61,7 +61,7 @@ class MockStraight extends ConcreteHandOfCards {
         if (this.isStraightWithJoker()) return true;
 
         // no jokers
-        if (this.hand.noSameRanks() && this.valueBetweenOf2()) return true;
+        if (this.hand.noSameRanks && this.valueBetweenOf2()) return true;
 
         return false;
 
