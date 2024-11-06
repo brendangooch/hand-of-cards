@@ -1,5 +1,6 @@
 /**
- * 
+ * base concrete hand that all hands in each game extend
+ * RANK is ordered in reverse - that is - rank 1 is the highest ranked hand
  */
 
 import { type iHand } from "./index.js";
@@ -13,8 +14,8 @@ export abstract class ConcreteHandOfCards implements iHand {
     private _name: string;
     private _rank: number;
 
-    public constructor(hand: HandAnalysis, name: string, rank: number, baseScore: number) {
-        this.hand = hand;
+    public constructor(analysis: HandAnalysis, name: string, rank: number, baseScore: number) {
+        this.hand = analysis;
         this._name = name;
         this._rank = rank;
         this.baseScore = baseScore;
@@ -26,10 +27,6 @@ export abstract class ConcreteHandOfCards implements iHand {
 
     public get name(): string {
         return this._name;
-    }
-
-    public get unordered(): PlayingCard[] {
-        return this.hand.unordered;
     }
 
     public abstract get isValid(): boolean;

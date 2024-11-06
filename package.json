@@ -43,7 +43,7 @@
     },
     "keywords": [],
     "dependencies": {
-        "@brendangooch/hand-analysis": "^2.0.0",
+        "@brendangooch/hand-analysis": "^2.0.1",
         "@brendangooch/playing-card": "^3.0.1"
     }
 }

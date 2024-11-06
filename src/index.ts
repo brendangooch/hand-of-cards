@@ -8,7 +8,6 @@ export interface iHand {
     get name(): string;
     get description(): string;
     get score(): number;
-    get unordered(): PlayingCard[];
     get ordered(): PlayingCard[];
 }
 
