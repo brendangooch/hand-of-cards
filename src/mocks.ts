@@ -98,7 +98,7 @@ class MockFlush extends ConcreteHandOfCards {
         if (this.hand.numJokers === 1 && this.hand.sameSuit(this.hand.nonJokers)) return true;
 
         // no jokers
-        if (this.hand.allSameSuit()) return true;
+        if (this.hand.allSameSuit) return true;
 
         return false;
 
