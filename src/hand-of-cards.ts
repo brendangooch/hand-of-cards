@@ -24,7 +24,7 @@ export abstract class HandOfCards implements iHand {
     }
 
     public get description(): string {
-        return (!this.currentStrategy) ? 'no hand' : this.currentStrategy.name;
+        return (!this.currentStrategy) ? 'no hand' : this.currentStrategy.description;
     }
 
     public get score(): number {

@@ -4,3 +4,6 @@ v1.0.1
 
 v1.0.2
     updated HandAnalysis package to latest version (3.1.0)
+
+v1.0.3
+    get description() was returning the strategy name NOT the description.  Have updated to return description
